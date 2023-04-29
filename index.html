@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Country Form</title>
+</head>
+<body>
+  <form action="/country" method="post">
+		<label for="yname">Твое имя:</label>   
+  		<input type="text" id="yname" name="yname"><br> 
+  		<label for="name">Название страны:</label>  
+  		<input type="text" id="name" name="name"><br>  
+		<label for="capital">Столица:</label>  
+  		<input type="text" id="capital" name="capital"><br>
+		<label for="population">Население:</label>  
+  		<input type="text" id="population" name="population"><br>
+		<label for="gdp">ВВП:</label>  
+  		<input type="text" id="gdp" name="gdp"><br>
+		<label for="leader">Лидер:</label>  
+  		<input type="text" id="leader" name="leader"><br>
+		<label for="currency">Валюта:</label>   
+  		<input type="text" id="currency" name="currency"><br>
+ 		<button type="submit">Отправить</button>  
+ 	</form>  
+		  
+
+
+	<form action="/countries" method="post">
+		<label for="uname">Твое имя:</label> 
+		<input type="text" id="uname" name="uname"><br>   
+ 		<button type="submit">Посмотреть страны</button>
+	</form>
+	<form action="/id" method="post">
+		<label for="uname">Твое имя:</label> 
+		<input type="text" id="uname" name="uname"><br>
+		<label for="country">ID:</label>   
+  		<input type="text" id="country" name="country"><br>   
+ 		<button type="submit">Посмотреть страну</button>
+	</form>
+	<form action="/edit" method="post">
+<label for="uname">Твое имя:</label> 
+		<input type="text" id="uname" name="uname"><br> 
+		<label for="country">Название страны:</label>   
+  		<input type="text" id="country" name="country"><br>   
+		<label for="type">Какой параметр:</label>  
+  		<select id="type" name="type">  
+  			<option value="name">Название</option>
+  			<option value="capital">Столица</option>  
+  			<option value="population">Население</option>  
+  			<option value="gdp">ВВП</option>  
+  			<option value="leader">Лидер</option>  
+  			<option value="currency">Валюта</option>
+		</select>
+		<br> 
+		<label for="edit">Значение:</label>   
+  		<input type="text" id="edit" name="edit"><br>   
+ 		<button type="submit">Редактировать страну</button>
+	</form> 
+	<form action="/delete" method="post">  
+<label for="uname">Твое имя:</label> 
+		<input type="text" id="uname" name="uname"><br> 
+		<label for="country">Название страны:</label>   
+  		<input type="text" id="country" name="country"><br>
+ 		<button type="submit">Удалить страну</button>
+	</form>  
+</body>
+</html>
